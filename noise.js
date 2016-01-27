@@ -38,20 +38,28 @@ $(document).ready( function() {
   });
 
   $(document).bind('keydown', function(e) {
-    if(e.keyCode == 67) {
-      playSound(cAudio);
-    } else if (e.which == 68) {
-      playSound(dAudio);
-    } else if (e.which == 69) {
-      playSound(eAudio);
-    } else if (e.which == 70) {
-      playSound(fAudio);
-    } else if (e.which == 71) {
-      playSound(gAudio);
-    } else if (e.which == 65) {
-      playSound(aAudio);
-    } else if (e.which == 66) {
-      playSound(bAudio);
+    switch(e.which) {
+      case 67:
+        playSound(cAudio);
+        break;
+      case 68:
+        playSound(dAudio);
+        break;
+      case 69:
+        playSound(eAudio);
+        break;
+      case 70:
+        playSound(fAudio);
+        break;
+      case 71:
+        playSound(gAudio);
+        break;
+      case 65:
+        playSound(aAudio);
+        break;
+      case 66:
+        playSound(bAudio);
+        break;
     }
   });
 
